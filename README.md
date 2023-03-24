@@ -48,3 +48,18 @@ which transforms feature value into 0-1.
 Because, we assume that few algorithms (that we used)
 expect the normalized data input, to avoid biased results. 
 For example SVM and logistic regression.
+
+# Basic Model Training!
+Now data is ready to train,  so we start with basic model training. 
+Here we train different models and present their confusion matrices to understand the performance. 
+We select the params by manual tuning, to avoid complexity at this point. 
+We started with a decision tree, with a max depth of 4, then Random Forest with the same depth and no of the estimator is  2500.
+Then K-Neighbors with 7 no of neighbors. Then, Support vector classifier and Logistic regression. 
+In both, we used a data normalized and non-normalized data.We can see that the decision tree has the highest metrics values (Accuracy score and F1), Also there is no difference in results of SVC and Logistic regression with and without the normalized dataset. It's time to work further with decision tree.As we saw, the Decision Tree is performing well. But we can still find the best parameters to get better results
+
+# Conclusion
+
+
+As we try to follow the Machine Learning life cycle in the project. We realized that the Decision Tree is the most accurate model, and we got a perfect accuracy. Also, we try Percentile and IQR-based filtering and notice that IQR is the best fit in our case. Through the analysis of feature importance, we can assume that Light is the most important feature of the classification. In the End there are some effects which does not create difference, which is the normalization of the data.
+
+
